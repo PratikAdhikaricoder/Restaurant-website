@@ -1,0 +1,20 @@
+// Reservation form handling
+document.getElementById('reservation-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+    const guests = document.getElementById('guests').value;
+
+    alert(`Reservation confirmed!\nName: ${name}\nDate: ${date}\nTime: ${time}\nGuests: ${guests}`);
+});
+
+// Contact form handling
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const contactName = document.getElementById('contact-name').value;
+    const contactEmail = document.getElementById('contact-email').value;
+    const contactMessage = document.getElementById('contact-message').value;
+
+    alert(`Message sent!\nName: ${contactName}\nEmail: ${contactEmail}\nMessage: ${contactMessage}`);
+});
