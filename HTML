@@ -1,0 +1,97 @@
+# Restaurant-website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pratik's Kitchen</title>
+    <link rel="stylesheet" href="Restaurantwebsite.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Pratik's Kitchen</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <h2>Welcome to Pratik's Kitchen</h2>
+        <p>Serving delicious and authentic Indian cuisine with love. Enjoy our tasty dishes and book your table today!</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <h3>Paneer Butter Masala</h3>
+            <p>Rich and creamy Indian curry with cottage cheese.</p>
+            <span>₹350</span>
+        </div>
+        <div class="menu-item">
+            <h3>Butter Chicken</h3>
+            <p>Deliciously spiced chicken cooked in creamy butter sauce.</p>
+            <span>₹400</span>
+        </div>
+        <div class="menu-item">
+            <h3>Masala Dosa</h3>
+            <p>Traditional South Indian crispy dosa with spicy potato filling.</p>
+            <span>₹150</span>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+        <h2>Make a Reservation</h2>
+        <form id="reservation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" required>
+
+            <button type="submit">Reserve Table</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <label for="contact-message">Message:</label>
+            <textarea id="contact-message" name="contact-message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Pratik's Kitchen | All Rights Reserved</p>
+    </footer>
+
+    <script src="Restaurantwebsite.js"></script>
+</body>
+</html>
